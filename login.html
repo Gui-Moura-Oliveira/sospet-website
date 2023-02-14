@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>sospet.com</title>
+  <link rel="stylesheet" href="stylesLogin.css" />
+  <link rel="shortcut icon" href="paw-prints.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <a class="navLogo" href="home.html">
+        <p id="logo">sos<span id="logo2">pet</span></p>
+      </a>
+
+      <ul>
+        <li><a href="home.html">ínicio</a></li>
+        <li><a href="found.html">Publicar Pet</a></li>
+        <li><a href="maps">Encontrar Pet</a></li>
+        <li><a href="hist">Histórias Felizes</a></li>
+        <li><a href="about">Sobre nós</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <img src="dog.png" id="backgroundimgLogin">
+
+  <form class="containerCards">
+
+    <div class="card">
+    
+      <h1 id="cardh1">login</h1>
+      
+      <div class="elements">
+        
+        <div class="login">
+          <input type="text" name="E-mail" id="elm" placeholder="E-mail" required="required" aria-required="true">
+        </div>
+
+        <div class="senha">
+          <input type="password" name="senha" id="elm" placeholder="Senha" required="required" aria-required="true">
+        </div>
+
+        <div class="remember-me">
+          <div class="remember-me2">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                  <label class="custom-control-label" for="defaultLoginFormRemember">Lembrar senha</label>
+              </div>
+          </div>
+      </div>
+
+        <div>
+          <button type="submit" name="button-suc" access="false" id="button-suc">Confirmar</button>
+        </div>
+        
+        <div class="cliqueaqui">
+          <p>Ainda não tem cadastro? <a>Clique aqui</a></p>
+          <br>
+        </div>
+        
+        <div class="redefinirSenha">
+          <p>Redefinir Senha</p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="card">
+
+      <h1 id="cardh1">cadastro</h1>
+      
+      <div class="elements">
+        
+        <div class="login">
+        <input type="text" name="E-mail" id="elm" placeholder="E-mail" required="required" aria-required="true">
+        </div>
+
+        <div class="senha">
+        <input type="password" name="senha" id="elm" placeholder="Senha" required="required" aria-required="true">
+        </div>
+        
+        
+        <div class="Confirmsenha">
+          <input type="password" name="senha" id="elm" placeholder="Confirmar senha" required="required" aria-required="true">
+        </div>
+
+        <div class="telefone">
+          <input type="tel" name="telefone" id="elm" placeholder="Telefone" required="required" aria-required="true">
+        </div>
+
+        <div class="CPF">
+          <input type="text" name="CPF" id="elm" placeholder="CPF" required="required" aria-required="true">
+        </div>
+
+        
+        <div class="lieaceito" >
+            
+          <input type="checkbox" name="checkbox" id="checkbox" required="required" aria-required="true">
+          <p>Eu li e aceito os <a href="https://policies.google.com/terms?hl=pt-BR">termos de uso</a>
+            e as <a href="https://policies.google.com/privacy?hl=pt-BR">políticas de privacidade.</a>
+        </p>
+      
+        </div>
+
+        <div>
+          <button type="submit" name="button-suc" access="false" id="button-suc">Confirmar</button>
+        </div>
+
+    </div>
+
+  </form>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

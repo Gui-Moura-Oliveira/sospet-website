@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>sospet.com</title>
+  <link rel="stylesheet" href="stylesfound.css" />
+  <link rel="shortcut icon" href="paw-prints.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a class="navLogo" href="home.html">
+        <p id="logo">sos<span id="logo2">pet</span></p>
+      </a>
+
+      <ul>
+        <li><a href="home.html">ínicio</a></li>
+        <li><a href="found.html">publicar Pet</a></li>
+        <li><a href="find">Encontrar Pet</a></li>
+        <li><a href="hist">Histórias Felizes</a></li>
+        <li><a href="about">Sobre nós</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <form class="arruma">
+    <div class="card-form">
+      <h1 id="info_pet">Publicar pet</h1>
+      
+      <div class="item">
+        <label>Nome do Pet</label>
+        <input type="text" class="name_pet" >
+      </div>
+
+      <div class="item">
+        <label>Animal<span>*</span></label>
+        <div class="item-animal">
+          <div class="item-animal">
+            <input name="item-animal" required="required" aria-required="true" value="cachorro" type="radio">
+            <label>Cachorro</label>
+          </div>
+          <div class="item-animal">
+            <input name="item-animal" required="required" aria-required="true" value="gato" type="radio">
+            <label>Gato</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <label>Sexo<span class="formbuilder-required">*</span></label>
+        <div class="radio-group">
+          <div class="formbuilder-radio">
+            <input name="sex_pet" access="false" id="sex_pet-0" required="required" aria-required="true" value="masc"
+              type="radio">
+            <label for="sex_pet-0">Masculino</label>
+          </div>
+          <div class="formbuilder-radio">
+            <input name="sex_pet" access="false" id="sex_pet-1" required="required" aria-required="true" value="femin"
+              type="radio">
+            <label for="sex_pet-1">Feminino</label>
+          </div>
+          <div class="formbuilder-radio">
+            <input name="sex_pet" access="false" id="sex_pet-1" required="required" aria-required="true" value="femin"
+              type="radio">
+            <label for="sex_pet-1">Não sei</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <label for="estado">Estado<span>*</span></label>
+        <select class="form-estado" name="estado" id="estado" required="required" aria-required="true">
+          <option value="option-1" selected="true" id="estado-0">Perdido ou desaparecido</option>
+          <option value="option-2" id="estado-1">Encontrado ou em minha residencia</option>
+          <option value="option-3" id="estado-2">Avistado</option>
+          <option value="option-4" id="estado-3">Sem vida</option>
+        </select>
+      </div>
+
+      <div class="item">
+        <label for="date">Data da publicação</label>
+        <input type="date" class="item-date" name="date" access="false" value="2023-02-02" id="date">
+      </div>
+
+      <div class="item">
+        <label for="file">Foto do pet<span>*</span></label>
+        <input type="file" class="item-foto" name="file" access="false" multiple="false" id="file" required="required"
+          aria-required="true">
+      </div>
+
+
+        <label class="item" for="story">Informações do Pet<span></span></label>
+        <textarea id="story" class="item-text" name="story" value="ex: cor, raça, dócil" ></textarea>
+
+
+
+      <div class="button-search">
+        <button type="submit" name="button-suc" access="false" id="button-suc">PUBLICAR</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
